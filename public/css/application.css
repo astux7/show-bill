@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial;
+  color: #666;
+}
+
+html, body {
+  height: 100%;
+}
+/* http://ryanfait.com/resources/footer-stick-to-bottom-of-page/ */
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto;
+  margin-bottom: -140px;
+  width: 100%;
+  text-align: center;
+}
+
+/* no links should be underlined */
+a {
+  text-decoration: none;
+}
+
+header {
+  margin: 20px auto;
+  clear: left;
+  height: 115px;
+  width: 90%;
+  text-align: left;
+}
+
+  header h2 {
+    margin: 0 0 18px;
+    font-size: 45px;
+    line-height: 56px;
+    color: #333;
+  }
+
+  header .logo {    
+    display: flex;   
+    background-image: url(/images/sky-logo-redesign.png);
+    background-repeat: no-repeat;
+    height: 72px;
+    width: 85px;
+  }
+
+.container {
+  background-color: white;
+  margin: 40px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  padding: 10px;
+}
+
+.flash {
+  text-align: center;
+  margin: 5px;
+  padding: 5px;  
+  border-radius: 4px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.4);
+  color: white;
+}
+
+  .flash.notice {
+    background-color: rgba(67,183,120,0.75);
+  }
+
+  .flash.error {
+   background-color: rgba(169,29,42,0.75); 
+  }
+
+.push {
+  clear: both;
+  height: 140px;
+}
+
+footer  {
+  background-color: #f4f4f4;
+  padding: 1.5em 0;
+  clear: both;
+  margin: 0 auto;
+  overflow: hidden;
+  font-size: 12px;
+  height: 140px;
+}
+
+  footer > * {
+    margin: auto inherit;
+  }
+
+  footer span {
+    padding-left: 20px;
+  }
+
+  .footer-logo {
+    background-image: url(/images/sky-logo-redesign.png);
+    background-repeat: no-repeat;
+    background-size: 72px 45px;
+    width: 72px;
+    height: 45px;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+  }
+
+  .copy-right {
+    width: 90%;
+    height: 80px;
+    margin-top: 1.5em;
+    padding-top: 1.5em;
+    border-top: 1px solid #dcdcdc;
+  }
