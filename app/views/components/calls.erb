@@ -1,0 +1,14 @@
+<div class="package"> 
+  <div class="title">Calls Charges</div>
+  <ul class="list">
+  <% data.calls.each do |unit| %>
+    <li>
+    <div class="col_1" ><%= unit.called %> </div>
+    <div class="col_2" ><%= unit.duration %> </div> 
+    <div class="col_3" ><%= currency_sign %><%= unit.cost %> </div>
+    </li>
+  <% end %>
+  </ul>
+  <%= partial :"components/subtotal", locals: { subtotal: data.total }  %>
+  
+</div>

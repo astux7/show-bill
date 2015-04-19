@@ -1,0 +1,14 @@
+<div class="package"> 
+  <div class="title">Sky Store</div>
+  <ul class="list">
+  <% data.store.each do |unit| %>
+    <li>
+      <div class="col_1" ><%= unit.title %> </div>
+      <div class="col_2" ><%= unit.type %> </div> 
+      <div class="col_3" ><%= currency_sign %><%= unit.cost %> </div>
+    </li>
+  <% end %>
+  </ul>
+  <%= partial :"components/subtotal", locals: { subtotal: data.total }  %>
+  
+</div>

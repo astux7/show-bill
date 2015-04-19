@@ -1,1 +1,31 @@
-Bill
+<div class="component short-statement">
+
+  <% if @bill_statement.run %>
+    <%= partial :"components/general", locals: { data: @bill_statement }  %>
+  <% end %>
+
+  <ul class="services">
+    <li>
+      <% if @bill_package.run %>
+        <%= partial :"components/package", locals: { data: @bill_package }  %>
+      <% end %>
+    </li>
+
+    <li>
+      <% if @bill_calls.run %>
+        <%= partial :"components/calls", locals: { data: @bill_calls }  %>
+      <% end %>
+    </li>
+
+    <li>
+      <% if @bill_store.run %>
+        <%= partial :"components/store", locals: { data: @bill_store }  %>
+      <% end %>
+    </li>
+  </ul>
+
+  <% if @bill_statement.run %>
+    <%= partial :"components/total_amount", locals: { data: @bill_statement }  %>
+  <% end %>
+</div>
+
