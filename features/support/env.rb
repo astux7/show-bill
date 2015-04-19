@@ -1,20 +1,9 @@
-# Sinatra
-require File.join(File.dirname(__FILE__), *%w[.. .. app])
-# Force the application name because polyglot breaks the auto-detection logic.
-Sinatra::Application.app_file = File.join(File.dirname(__FILE__), *%w[.. .. app.rb])
+require 'capybara/cucumber'
+require './app/server'
 
-# RSpec
-require 'spec/expectations'
+Capybara.app = Sinatra::Application
+#Sinatra::Application.set :product_list, InMemoryProductList.new
 
-# Webrat
-require 'webrat'
-Webrat.configure do |config|
-  config.mode = :sinatra
-end
-
-World do
-  include Webrat::Matchers
-  include Webrat::HaveTagMatcher
-
-  Webrat::SinatraSession.new
+Capybara.register_driver :selenium do |app|
+  Capybara::Selenium::Driver.new(app, :browser => :chrome)
 end

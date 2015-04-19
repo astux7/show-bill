@@ -86,7 +86,6 @@
     }
 
     .package {
-      //border-top: 1px solid #f4f4f4;
       clear: both;
       width: 100%;
       font-size: 12px;
@@ -96,13 +95,16 @@
   .total, .owed, .package .title {
     background-color: #e1e1e1;
   }
+
   .total {
     height: 40px;
     font-size: 23px;
   }
+
   .subtotal, .owed {
     float: left;
   }
+
   .list {
     display: none;
   }
