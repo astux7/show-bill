@@ -23,7 +23,7 @@ private
   end
 
   def format_date(data)
-    data.split('-').reverse.take(3).join('/')
+    data.split('-').reverse.join('/')
   end
 
   def from
