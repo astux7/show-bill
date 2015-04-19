@@ -1,10 +1,10 @@
 <div class="title">Your Bill Summary</div>
 <div class="summary">
   <div class="col_1"><p>Bill date:</p><%= format_date(data.generated) %></div>
-  <div class="col_2"><p>Payment due:</p> <%= format_date(data.due) %></div>
-  <div class="col_3"><p>Billing period:</p> <%= data.period %></div>
+  <div class="col_2"><p>Payment due:</p><%= format_date(data.due) %></div>
+  <div class="col_3"><p>Billing period:</p><%= data.period %></div>
 </div>
 <div class="owed">
   <div class="description">Owed from last bill:</div>
-  <div class="amount"> <%= currency_sign %>0.00</div>
+  <div class="amount"><%= currency_sign %>0.00</div>
 </div>

@@ -1,10 +1,7 @@
 .component {
   width: 100%;
-  background-color: #e1e1e1;
   border: 1px solid #f4f4f4;
   text-align: left;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
   font-size: 14px;
   clear: both;
   margin-bottom: 10px;
@@ -15,6 +12,7 @@
       margin: auto;
       padding: 10px;
       border-bottom: 1px solid #f4f4f4;
+      background-color: #e1e1e1;
     }
 
     .component .col_1,
@@ -24,6 +22,7 @@
       float: left;
       width: 33.33%;
       padding: 5px;
+      min-height: 40px;
     }
 
     .component .summary .col_1,
@@ -87,7 +86,7 @@
     }
 
     .package {
-      border-top: 1px solid #f4f4f4;
+      //border-top: 1px solid #f4f4f4;
       clear: both;
       width: 100%;
       font-size: 12px;
@@ -101,9 +100,9 @@
     height: 40px;
     font-size: 23px;
   }
-  .subtotal {
+  .subtotal, .owed {
     float: left;
   }
   .list {
-    //display: none;
+    display: none;
   }
