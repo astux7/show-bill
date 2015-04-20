@@ -8,11 +8,15 @@
   }
     .component .title {
       width: 100%;
-      height: 30px;
+      min-height: 30px;
       margin: auto;
       padding: 10px;
       border-bottom: 1px solid #f4f4f4;
       background-color: #e1e1e1;
+    }
+    .component .title h3 {
+      font-size: 25px;
+      height: 30px;
     }
 
     .component .col_1,
@@ -94,6 +98,11 @@
 
   .total, .owed, .package .title {
     background-color: #e1e1e1;
+  }
+
+  .owed {
+    padding: 5px;
+    min-height: 35px;
   }
 
   .total {

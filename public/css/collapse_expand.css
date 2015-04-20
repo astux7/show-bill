@@ -1,0 +1,31 @@
+.more-info-bar{
+  margin-bottom: 10px;
+  display: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+  .more-info-bar span {
+    float: right;
+  }
+
+.arrow-expanded {
+  border-color: transparent transparent #000 transparent;
+  border-width: 0 5px 5px 5px;
+  top: -10px;
+}
+
+.arrow-contracted {
+  border-color: #000 transparent transparent transparent;
+  border-width: 5px 5px 0 5px;
+  top: 10px;
+}
+
+.arrow-expanded,
+.arrow-contracted {
+  border-style: solid;
+  line-height: 14px;
+}

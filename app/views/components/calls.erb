@@ -1,5 +1,8 @@
-<div class="package"> 
-  <div class="title">Calls Charges</div>
+<div class="package calls"> 
+  <div class="title more-info-bar contracted">
+    Calls Charges
+    <span class="arrow-contracted"></span>
+  </div>
   <ul class="list">
   <% data.calls.each do |unit| %>
     <li>
@@ -9,6 +12,7 @@
     </li>
   <% end %>
   </ul>
+  
   <%= partial :"components/subtotal", locals: { subtotal: data.total }  %>
   
 </div>
