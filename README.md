@@ -1,12 +1,12 @@
 # show-bill
 
-+ Sinatra/HTML/CSS (technology)
++ Sinatra/Ruby/HTML/CSS/jQuery (technology)
 + rSpec/Cucumber(TDD/BDD)
 
-+ Must consume bill JSON from endpoint:
-http://safe-plains-5453.herokuapp.com/bill.json
++ Consume bill JSON from endpoint:
+http://basta-bill.herokuapp.com/bill.json
 
-+Should be served up on a web server.
++ responsive design for mobiles and desktop
 
 To run program locally:
 
