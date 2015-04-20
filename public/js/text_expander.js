@@ -1,26 +1,19 @@
-var OverviewDescription = (function ($) {
+var TextExpander = (function ($) {
   "use strict";
 
-  var settings = {
-    minHeight: 200,
-  }
-
-  function OverviewDescription($block, scrollHeight) {
+  function TextExpander($block, scrollHeight) {
     this.$button          = $(".more-info-bar", $block);
     this.$text            = $(".list", $block);
     this.arrow            = this.$button.find("span[class*='arrow-']");
   }
 
-  OverviewDescription.init = function($element) {
+  TextExpander.init = function($element) {
     if ($element.length) {
-      //var scrollHeight = $(".details", $element)[0].scrollHeight;
-      //if (scrollHeight > settings.minHeight) {
-        new OverviewDescription($element).bind();
-      //}
+      new TextExpander($element).bind();
     }
   }
 
-  OverviewDescription.prototype.bind = function() {
+  TextExpander.prototype.bind = function() {
     var _self = this;
     _self.$button.show();
     this.$button.on("click", function() { update(_self); });
@@ -49,20 +42,20 @@ var OverviewDescription = (function ($) {
   }
 
   function textAnimation(_self, type) {
-    //_self.$text.css("height", closeHeight);
-    if(type){
-    _self.$text.show();//.addClass("text-accordion");
-    }else{
+    if(type) {
+    _self.$text.show();
+    }
+    else {
       _self.$text.hide();
     }
 
   }
 
-  return OverviewDescription;
+  return TextExpander;
 }(window.jQuery));
 
 $(document).ready(function() {
-  OverviewDescription.init($(".subscriptions"));
-  OverviewDescription.init($(".calls"));
-  OverviewDescription.init($(".store"));
+  TextExpander.init($(".subscriptions"));
+  TextExpander.init($(".calls"));
+  TextExpander.init($(".store"));
 });
