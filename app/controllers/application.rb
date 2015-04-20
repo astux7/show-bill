@@ -26,5 +26,5 @@ def get_data
 end
 
 def bill_url
-  "http://safe-plains-5453.herokuapp.com/bill.json"
+  "http://basta-bill.herokuapp.com/bill.json"
 end
