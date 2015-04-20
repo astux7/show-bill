@@ -12,7 +12,7 @@ Then(/^the Subscriptions section with subtotal$/) do
 end
 
 Then(/^the Sky Store section with subtotal$/) do
-  expect(page).to have_content("Calls Charges")
+  expect(page).to have_content("Sky Store")
   expect(page).to have_content("£24.97")
 end
 
