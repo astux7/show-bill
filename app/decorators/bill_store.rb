@@ -1,5 +1,3 @@
-require_relative 'base'
-
 class Decorator::BillStore < Decorator::Base
   attr_reader :run, :total, :store, :title, :cost, :type
 

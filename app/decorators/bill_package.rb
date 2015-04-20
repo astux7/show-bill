@@ -1,5 +1,3 @@
-require_relative 'base'
-
 class Decorator::BillPackage < Decorator::Base
   attr_reader :run, :subscriptions, :total, :type, :name, :cost
   

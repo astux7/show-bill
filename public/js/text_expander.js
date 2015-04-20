@@ -41,8 +41,8 @@ var TextExpander = (function ($) {
     _self.$button.removeClass(from).addClass(to);
   }
 
-  function textAnimation(_self, type) {
-    if(type) {
+  function textAnimation(_self, expanded) {
+    if(expanded) {
     _self.$text.show();
     }
     else {

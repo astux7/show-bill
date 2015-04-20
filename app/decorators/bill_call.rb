@@ -1,5 +1,3 @@
-require_relative 'base'
-
 class Decorator::BillCall < Decorator::Base
   attr_reader :run, :calls, :total, :duration, :called, :cost
   Struct.new("CallCharges", :called, :cost, :duration)

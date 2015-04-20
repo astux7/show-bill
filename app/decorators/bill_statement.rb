@@ -1,5 +1,3 @@
-require_relative 'base'
-
 class Decorator::BillStatement < Decorator::Base
   attr_reader :run, :total, :due, :period, :generated
 

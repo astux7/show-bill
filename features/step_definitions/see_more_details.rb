@@ -6,7 +6,7 @@ Then(/^user can see more details about subscriptions$/) do
   expect(page).to have_content("Sky Talk Anytime")
 end
 
-Then(/^Then user cannot see more details about Call Chargers$/) do
+Then(/^Then user cannot see more details about Call Charges$/) do
   expect(page).to have_no_content("07716393769")
 end
 
